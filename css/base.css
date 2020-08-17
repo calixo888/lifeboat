@@ -4,13 +4,22 @@
   box-sizing: border-box;
 }
 
+.page-container {
+  padding: 50px 0;
+}
+
 .split-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 50px;
+  align-items: center;
 }
 
 .split-grid iframe {
+  width: 100%;
+}
+
+.split-grid img {
   width: 100%;
 }
 
