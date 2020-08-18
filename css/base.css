@@ -1,7 +1,19 @@
+:root {
+  --color-primary: #909eae;
+  --color-secondary: #ffd275;
+  --color-secondary-dark: #f7bf4b;
+  --color-tertiary: #03498e;
+  --color-fourth: #f0f3f6;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+body {
+  background-color: var(--color-fourth) !important;
 }
 
 .page-container {
@@ -28,4 +40,67 @@
     grid-template-columns: repeat(auto-fill, 100%);
     grid-gap: 25px;
   }
+}
+
+/* HEADERS */
+.header-primary {
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.header-secondary {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.header-tertiary {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.header-fourth {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* BUTTONS */
+.button {
+  padding: 12.5px 15px;
+  border-radius: 8px;
+  color: white;
+  transition: all .2s;
+  font-size: 20px;
+}
+
+.button:hover {
+  color: white;
+  text-decoration: none;
+}
+
+.button-dark {
+  background-color: var(--color-primary);
+}
+
+.button-dark:hover {
+  background-color: var(--color-tertiary);
+}
+
+.button-light {
+  background-color: var(--color-secondary);
+  padding: 15px;
+  border-radius: 8px;
+}
+
+.button-light:hover {
+  background-color: var(--color-secondary);
+}
+
+.ghost-button-light {
+  background-color: transparent;
+  border: 1px solid white;
+}
+
+.ghost-button-light:hover {
+  background-color: white;
+  color: black;
 }

@@ -9,8 +9,13 @@
 }
 
 .member img {
-  width: 75%;
+  border-radius: 50%;
+  width: 65%;
   margin: 0 auto;
+}
+
+.member h3 {
+  margin-top: 15px;
 }
 
 .member p {
