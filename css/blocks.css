@@ -5,3 +5,11 @@
   align-items: center;
   justify-content: flex-end;
 }
+
+.social-links img {
+  transition: all .2s;
+}
+
+.social-links img:hover {
+  transform: scale(1.15);
+}
