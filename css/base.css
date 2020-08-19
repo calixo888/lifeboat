@@ -17,6 +17,7 @@ body {
   background-color: var(--color-fourth) !important;
 }
 
+/* GRIDS/CONTAINERS */
 .page-container {
   padding: 50px 0;
 }
