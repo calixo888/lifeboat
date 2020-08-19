@@ -13,7 +13,7 @@
       <div class="container">
         <div class="center-container">
           <h1 class="header-primary">Lifeboat</h1>
-          <p style="font-size: 22.5px;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          <p style="font-size: 22.5px;" data-spark="home-blurb"></p>
           <div class="cta-buttons">
             <a class="button ghost-button-light" href="./about.html">Learn more</a>
             <a class="button button-dark" href="./sign-up.html">Sign up!</a>
@@ -25,9 +25,11 @@
     <div id="footer"></div>
   </body>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+  <script src="https://cdn.webxconsulting.com/files/spark/text.js" charset="utf-8"></script>
   <script>
     $(function() {$("#imports").load("./blocks/imports.html")});
     $(function(){$("#navbar").load("./blocks/navbar.html")});
     $(function(){$("#footer").load("./blocks/footer.html")});
+    const spark = new Spark("lifeboat");
   </script>
 </html>

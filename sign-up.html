@@ -9,7 +9,7 @@
     <div id="navbar"></div>
     <div class="page-container container">
       <h1 class="header-secondary">Sign up!</h1>
-      <p>Whether you want to help others or need help yourself, we're here for you!</p>
+      <p data-spark="sign-up-blurb"></p>
       <div class="split-grid">
         <div class="text-center">
           <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdT_Z8jUDSndYQeArriG0rmwFQAz9V_NnqUN3Y8EiJh1ItpTQ/viewform?embedded=true" height="500" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
@@ -22,9 +22,11 @@
     <div id="footer"></div>
   </body>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+  <script src="https://cdn.webxconsulting.com/files/spark/text.js" charset="utf-8"></script>
   <script>
     $(function() {$("#imports").load("./blocks/imports.html")});
     $(function(){$("#navbar").load("./blocks/navbar.html")});
     $(function(){$("#footer").load("./blocks/footer.html")});
+    const spark = new Spark("lifeboat");
   </script>
 </html>

@@ -12,37 +12,39 @@
       <div class="split-grid">
         <div>
           <h1 class="header-secondary">About Lifeboat</h1>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <p data-spark="about-blurb"></p>
         </div>
-        <img src="./img/home-image.jpg">
+        <img src="https://cdn.webxconsulting.com/cms/images/?projectAlias=lifeboat&alias=about-image">
       </div>
 
       <h1 class="header-secondary mt-5">Meet the Team!</h1>
       <p>Here's the amazing team behind Lifeboat!</p>
       <div class="team-grid mt-3">
         <div class="member">
-          <img src="./img/people/test.jpg">
+          <img src="https://cdn.webxconsulting.com/cms/images/?projectAlias=lifeboat&alias=regina">
           <h3>Name</h3>
-          <p>Title</p>
+          <p data-spark="regina-title">Title</p>
         </div>
         <div class="member">
-          <img src="./img/people/test.jpg">
+          <img src="https://cdn.webxconsulting.com/cms/images/?projectAlias=lifeboat&alias=sara">
           <h3>Name</h3>
-          <p>Title</p>
+          <p data-spark="sara-title">Title</p>
         </div>
         <div class="member">
-          <img src="./img/people/test.jpg">
+          <img src="https://cdn.webxconsulting.com/cms/images/?projectAlias=lifeboat&alias=rena">
           <h3>Name</h3>
-          <p>Title</p>
+          <p data-spark="rena-title">Title</p>
         </div>
       </div>
     </div>
     <div id="footer"></div>
   </body>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+  <script src="https://cdn.webxconsulting.com/files/spark/text.js" charset="utf-8"></script>
   <script>
     $(function() {$("#imports").load("./blocks/imports.html")});
     $(function(){$("#navbar").load("./blocks/navbar.html")});
     $(function(){$("#footer").load("./blocks/footer.html")});
+    const spark = new Spark("lifeboat");
   </script>
 </html>
